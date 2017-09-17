@@ -9,8 +9,8 @@ Repoya istediğiniz başlıkta katkıda bulunabilir, istediğiniz başlık yoksa
 
 ## Android Soruları
 
-#### :fire: ANR Nedir 
-#### :fire: :fire: Fragmentlarda neden default constructor a ihtiyaç vardır ?
+#### ANR Nedir :fire:
+#### Fragmentlarda neden default constructor a ihtiyaç vardır ? :fire: :fire:
 
 
 ### Destekleyiciler
