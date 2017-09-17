@@ -17,13 +17,13 @@ Evet. Her soru cevabıyla girilmeyebilir. Sorulan sorunun issuesunu açıp cevab
 :fire: :fire: :fire: Uzman seviye 
 
 
-## Java Soruları
-
-
 ## Android Soruları
 
-#### ANR Nedir :fire:
+#### ANR Nedir ? :fire:
 ANR, "(A)pplication (N)ot (R)esponding" anlamına gelen ve sistem tarafından gösterilen bir dialogdur. Uzun süren işlemler UI thread'de gerçekleşirse ve 5 saniye boyunca user input'a cevap verilmezse ANR meydana gelir.
+
+#### Content Provider Nedir ? :fire:
+
 #### Android'te veri saklamak için kaç yol vardır ? [:fire:](https://github.com/yusufcakmak/Android-Mulakat/issues/1)
 5 yol vardır. Shared preferences, Internal Storage, Local cache, External Storage, SQLite Database, Content Provider, Network Connection.
 #### Fragmentlarda empty constructora ihtiyaç var mıdır? Neden? :fire: :fire:
