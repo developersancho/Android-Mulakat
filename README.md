@@ -4,12 +4,11 @@ Bu repoyu mülakat sürecinde olan veya girecek arkadaşlara yardımcı olması 
 
 Repoya istediğiniz başlıkta katkıda bulunabilir, istediğiniz başlık yoksa açabilirsiniz.
 
-### Genel Sorular
+### Java Soruları
 
 
-### Temel Java Soruları
+### Android Soruları
 
 
-### Temel Android Soruları
 
 
