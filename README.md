@@ -4,6 +4,10 @@ Bu repoyu mülakat sürecinde olan veya girecek arkadaşlara yardımcı olması 
 
 Repoya istediğiniz başlıkta katkıda bulunabilir, istediğiniz başlık yoksa açabilirsiniz.
 
+:fire: Başlangıç seviyesi sorular
+:fire: :fire: Orta seviye sorular
+:fire: :fire: :fire: Uzman seviye sorular
+
 ## Java Soruları
 
 
