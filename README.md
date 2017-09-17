@@ -4,12 +4,12 @@ Bu repoyu mülakat sürecinde olan veya girecek arkadaşlara yardımcı olması 
 
 Repoya istediğiniz başlıkta katkıda bulunabilir, istediğiniz başlık yoksa açabilirsiniz.
 
-### Java Soruları
+## Java Soruları
 
 
-### Android Soruları
+## Android Soruları
 
-# :fire: ANR Nedir ?
+#### :fire: ANR Nedir ?
 
 
 ### Destekleyiciler
