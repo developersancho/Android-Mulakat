@@ -16,6 +16,7 @@ Repoya istediğiniz başlıkta katkıda bulunabilir, istediğiniz başlık yoksa
 ## Android Soruları
 
 #### ANR Nedir :fire:
+#### Android'te veri saklamak için kaç yol vardır ? [:fire:](https://github.com/yusufcakmak/Android-Mulakat/issues/1)
 #### Fragmentlarda neden default constructor a ihtiyaç vardır ? :fire: :fire:
 
 
