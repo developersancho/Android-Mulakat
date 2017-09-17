@@ -9,9 +9,10 @@ Repoya istediğiniz başlıkta katkıda bulunabilir, istediğiniz başlık yoksa
 
 ### Android Soruları
 
+# :fire: ANR Nedir ?
 
 
-### Collaborators
+### Destekleyiciler
 * [iammert](https://github.com/iammert)
 * [muratcanbur](https://github.com/muratcanbur)
 * [yusufcakmak](https://github.com/yusufcakmak)
