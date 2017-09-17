@@ -2,13 +2,20 @@
 
 Bu repoyu mülakat sürecinde olan veya girecek arkadaşlara yardımcı olması amacıyla oluşturduk. "Neden Biz ? ", "5 yıl sonra kendini nerede görüyorsun ? " tarzında sorulardan ziyade karşılaşabileceğimiz teknik soruları ve mümkün olduğunda cevaplarını ekleyeceğiz.
 
-Repoya istediğiniz başlıkta katkıda bulunabilir, istediğiniz başlık yoksa açabilirsiniz.
+## Soru ekleyebilir miyim? 🤔
+Evet. Issues kısmına "Bence mülakatta sorulabilir." dediğin soruları girebilirsin.
 
-:fire: Başlangıç seviyesi sorular
+## Soru cevaplayabilir miyim? 🤓
+Evet. Her soru cevabıyla girilmeyebilir. Sorulan sorunun issuesunu açıp cevabını yazabilirsin.
 
-:fire: :fire: Orta seviye sorular
+## Emojiler ve Seviyeler
 
-:fire: :fire: :fire: Uzman seviye sorular
+:fire: Başlangıç seviyesi
+
+:fire: :fire: Orta seviye
+
+:fire: :fire: :fire: Uzman seviye 
+
 
 ## Java Soruları
 
@@ -23,7 +30,7 @@ ANR, "(A)pplication (N)ot (R)esponding" anlamına gelen ve sistem tarafından g�
 Fragment oluştururken empty constructor'a ihtiyaç vardır. Bazı durumlarda (Screen rotation vs.) android frameworku fragmenti destroy edip tekrar yaratır. Bu durumda framework tarafında fragment'ın empty constructor'ı çağrılır. Eğer parametreli bir constructor eklemediysek empty constructor yaratmaya ihtiyaç yoktur çünkü bu durumda java compiler empty constructor'u kendi ekler. Fakat parametreli bir constructor tanımlarsak eğer bunun yanında empty constructor tanımlamak zorundayız. 
 
 Parametreli bir constructor tanımlayıp empty constructor tanımlamazsak uygulamamız çalışmaz mı? Çalışır. Fakat rotation change vs. gibi android frameworkünün fragmenti yok edip tekrar yarattığı durumda ```android.support.v4.app.Fragment$InstantiationException``` hatası fırlatılır.
-
+#### Fragment Transaction işleminde commit(), commitNow(), commitAllowingStateLoss(), commitNowAllowingStateLoss() farkı nedir? :fire: :fire: :fire:
 
 
 ### Destekleyiciler
