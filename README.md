@@ -12,6 +12,7 @@ Repoya istediğiniz başlıkta katkıda bulunabilir, istediğiniz başlık yoksa
 
 ## Java Soruları
 
+#### Serilization nedir ? :fire:
 
 ## Android Soruları
 
