@@ -16,6 +16,10 @@ Evet. Her soru cevabıyla girilmeyebilir. Sorulan sorunun issuesunu açıp cevab
 
 :fire: :fire: :fire: Uzman seviye 
 
+## Java Soruları 
+
+#### Java 8 ile gelen başlıca yenilikler nelerdir? :fire:
+https://www.linkedin.com/pulse/20140409042429-11833655-java-8-ile-gelen-yenilikler/
 
 ## Android Soruları
 
