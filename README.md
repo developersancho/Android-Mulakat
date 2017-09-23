@@ -21,6 +21,14 @@ Evet. Her soru cevabıyla girilmeyebilir. Sorulan sorunun issuesunu açıp cevab
 #### Java 8 ile gelen başlıca yenilikler nelerdir? :fire:
 https://www.linkedin.com/pulse/20140409042429-11833655-java-8-ile-gelen-yenilikler/
 
+#### Java 9 ile gelen başlıca yenilikler nelerdir? :fire:
+* JShell
+* Module System
+* Modular Run-Time Images
+* Process API Değişiklikleri
+
+Daha detaylı bilgi için: http://openjdk.java.net/projects/jdk9/
+
 ## Android Soruları
 
 #### ANR Nedir ? :fire:
