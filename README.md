@@ -21,6 +21,14 @@ Evet. Her soru cevabıyla girilmeyebilir. Sorulan sorunun issuesunu açıp cevab
 #### Java 8 ile gelen başlıca yenilikler nelerdir? :fire:
 https://www.linkedin.com/pulse/20140409042429-11833655-java-8-ile-gelen-yenilikler/
 
+#### Java 9 ile gelen başlıca yenilikler nelerdir? :fire:
+* JShell: Java için yazılmış bir REPL aracıdır. REPL'dan kısaca bahsetmek gerekirse yazılan kodu okur(Read), değerlendirir(Eval), değerlendirilen kodun sonucunu gösterir(Print) ve daha sonra tekrar bu prosedürlerin gerçekleşmesini sağlar(Loop). Böylelikle kod parçalarını yeni projeler oluşturarak denemek yerine JShell yardımıyla, komutlarla test edebiliriz.
+* Module System: Projedeki jar dosyaları arttıkça, karışıklık da artmaya başlar. Projeye eklenen jar dosyaları eksikse ya da aynı paket ismi altında bulunan sınıflar var ise bu karışıklık daha da büyür. Module System ile bu karışıklıkların önüne geçebilmek hedefleniyor. Projeye sadece jar dosyasının paylaşıma açtığı paketler eklenebiliyor. Böylelikle paylaşıma açılmayan paketler encapsulated olarak korunuyor ve karışıklık önleniyor.
+* Modular Run-Time Images: JRE ile çalıştırılmak istenen kodun image'ı oluşturuluyor ve kodu çalıştırmak istediğimizde bu image'dan çalıştırılıyor. Böylelikle versiyon farklılıklarının önenüne geçiliyor.
+* Process API Değişiklikleri: Mevcut Java versiyonlarında işletim sistemin process'lerine native kodlar aracılığıyla ulaşılabiliyordu. Java 9 ile bu process'lere native kod kullanmadan erişmek mümkün olacak.
+
+Daha detaylı bilgi için: http://openjdk.java.net/projects/jdk9/
+
 ## Android Soruları
 
 #### ANR Nedir ? :fire:
