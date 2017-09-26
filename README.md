@@ -44,6 +44,8 @@ Fragment oluştururken empty constructor'a ihtiyaç vardır. Bazı durumlarda (S
 Parametreli bir constructor tanımlayıp empty constructor tanımlamazsak uygulamamız çalışmaz mı? Çalışır. Fakat rotation change vs. gibi android frameworkünün fragmenti yok edip tekrar yarattığı durumda ```android.support.v4.app.Fragment$InstantiationException``` hatası fırlatılır.
 #### Fragment Transaction işleminde commit(), commitNow(), commitAllowingStateLoss(), commitNowAllowingStateLoss() farkı nedir? :fire: :fire: :fire:
 
+#### SharedPreferences'e data yazarken commit() ve apply() methodlarının farkı nedir? :fire: :fire:
+commit() syncronous gerçekleşirken apply() asyncronous gerçekleşir. Yani commit() çağrıldığında o işlemi hemen gerçekleştirir. apply()  methodu da arka planda gerçekleşir.
 
 ### Destekleyiciler
 * [iammert](https://github.com/iammert)
