@@ -47,6 +47,21 @@ Parametreli bir constructor tanımlayıp empty constructor tanımlamazsak uygula
 #### SharedPreferences'e data yazarken commit() ve apply() methodlarının farkı nedir? :fire: :fire:
 commit() syncronous gerçekleşirken apply() asyncronous gerçekleşir. Yani commit() çağrıldığında o işlemi hemen gerçekleştirir. apply()  methodu da arka planda gerçekleşir.
 
+#### Launch Mode çeşitleri nelerdir ? :fire: :fire:
+Android uygulama geliştirirken bir Activity’ nin yeni bir tane olarak oluşturulup kullanılacağını veya zaten var olan bir instance ' nin tekrardan kullanılabileceğini tanımlayan kurallar dizidir.
+
+Bu kuralları kısa bir şekilde özetleyecek olursak, 
+
+* standart: Bu mod tanımında, her bir Intent çağrısı için yeni bir tane Activity oluşturulur.
+
+* singleTop: Bu mod tanımında ise, Intent çağrısı zaten oluşturulmuş bir Activity için çağırılırsa yeni bir Activity oluşturulmaz, onun yerine var olan Activity instance kullanılmaya devam edilir. Bu mod kullanımında onNewIntent ve onCreate metotlarında düzenlenmelidir.
+
+* singleTask: Bu mod tanımında çağrılan bir Activity' den sadece tek bir instance oluşturabilir. Sistem içerisinde zaten var olan bir Activity' e istek gönderilirse onNewIntent metodu kontrol edilmelidir.
+
+* singleInstance: singleTask moduna benzer bir kullanım söz konusudur. Ancak bu activity' i tutan task sadece tek bir singleInstance olarak tanımlanmış activity' i barındırabilir.
+
+Detaylı bilgi için: https://inthecheesefactory.com/blog/understand-android-activity-launchmode/en
+
 ### Destekleyiciler
 * [iammert](https://github.com/iammert)
 * [muratcanbur](https://github.com/muratcanbur)
