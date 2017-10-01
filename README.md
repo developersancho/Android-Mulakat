@@ -35,6 +35,9 @@ Daha detaylı bilgi için: http://openjdk.java.net/projects/jdk9/
 ANR, "(A)pplication (N)ot (R)esponding" anlamına gelen ve sistem tarafından gösterilen bir dialogdur. Uzun süren işlemler UI thread'de gerçekleşirse ve 5 saniye boyunca user input'a cevap verilmezse ANR meydana gelir.
 
 #### Content Provider Nedir ? :fire:
+Content Provider (İçerik Sağlayıcı), uygulamanızda kullandığınız yerel verileri başka bir uygulamanın kullanımına açılması ve gerektiğinde veriler üzerinde değişiklik yapabilmesi durumlarında kullanılan bir yapıdır. Bu genelde SQLite veritabanı olmakta birlikte farklı veri saklama biçimleri de olabilir.
+
+Detaylı bilgi için [tıklayınız.](https://developer.android.com/guide/topics/providers/content-providers.html)
 
 #### Android'te veri saklamak için kaç yol vardır ? [:fire:](https://github.com/yusufcakmak/Android-Mulakat/issues/1)
 5 yol vardır. Shared preferences, Internal Storage, Local cache, External Storage, SQLite Database, Content Provider, Network Connection.
