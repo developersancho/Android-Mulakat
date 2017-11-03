@@ -18,10 +18,13 @@ Evet. Her soru cevabıyla girilmeyebilir. Sorulan sorunun issuesunu açıp cevab
 
 ## Java Soruları 
 
-#### Java 8 ile gelen başlıca yenilikler nelerdir? :fire:
+*   **[Java 8 ile gelen başlıca yenilikler nelerdir?](#java8)**
+*   **[Java 9 ile gelen başlıca yenilikler nelerdir?](#java9)**
+
+#### <a name="java8"></a> Java 8 ile gelen başlıca yenilikler nelerdir? :fire:
 https://www.linkedin.com/pulse/20140409042429-11833655-java-8-ile-gelen-yenilikler/
 
-#### Java 9 ile gelen başlıca yenilikler nelerdir? :fire:
+#### <a name="java9"></a> Java 9 ile gelen başlıca yenilikler nelerdir? :fire:
 * JShell: Java için yazılmış bir REPL aracıdır. REPL'dan kısaca bahsetmek gerekirse yazılan kodu okur(Read), değerlendirir(Eval), değerlendirilen kodun sonucunu gösterir(Print) ve daha sonra tekrar bu prosedürlerin gerçekleşmesini sağlar(Loop). Böylelikle kod parçalarını yeni projeler oluşturarak denemek yerine JShell yardımıyla, komutlarla test edebiliriz.
 * Module System: Projedeki jar dosyaları arttıkça, karışıklık da artmaya başlar. Projeye eklenen jar dosyaları eksikse ya da aynı paket ismi altında bulunan sınıflar var ise bu karışıklık daha da büyür. Module System ile bu karışıklıkların önüne geçebilmek hedefleniyor. Projeye sadece jar dosyasının paylaşıma açtığı paketler eklenebiliyor. Böylelikle paylaşıma açılmayan paketler encapsulated olarak korunuyor ve karışıklık önleniyor.
 * Modular Run-Time Images: JRE ile çalıştırılmak istenen kodun image'ı oluşturuluyor ve kodu çalıştırmak istediğimizde bu image'dan çalıştırılıyor. Böylelikle versiyon farklılıklarının önenüne geçiliyor.
@@ -31,26 +34,39 @@ Daha detaylı bilgi için: http://openjdk.java.net/projects/jdk9/
 
 ## Android Soruları
 
-#### ANR Nedir ? :fire:
+*  **[ANR Nedir ?](#anr)** :fire:  
+*  **[Content Provider Nedir ?](#contentprovider)** :fire:  
+*  **[Android'te veri saklamak için kaç yol vardır ?](#datastore)** :fire: 
+*  **[Fragmentlarda empty constructora ihtiyaç var mıdır? Neden?](#fragmentempty)** :fire: :fire: 
+*  **[SharedPreferences'e data yazarken commit() ve apply() methodlarının farkı nedir?](#sharedpref)** :fire: :fire: 
+*  **[Launch Mode çeşitleri nelerdir ?](#launchmode)** :fire: :fire: 
+*  **[Fragment Transaction işleminde commit(), commitNow(), commitAllowingStateLoss(), commitNowAllowingStateLoss() farkı nedir?](#fragmentcommit)** :fire: :fire: :fire: 
+
+
+## Android Soruları
+
+#### <a name="anr"></a> ANR Nedir ? :fire:
 ANR, "(A)pplication (N)ot (R)esponding" anlamına gelen ve sistem tarafından gösterilen bir dialogdur. Uzun süren işlemler UI thread'de gerçekleşirse ve 5 saniye boyunca user input'a cevap verilmezse ANR meydana gelir.
 
-#### Content Provider Nedir ? :fire:
+#### <a name="contentprovider"></a> Content Provider Nedir ? :fire:
 Content Provider (İçerik Sağlayıcı), uygulamanızda kullandığınız yerel verileri başka bir uygulamanın kullanımına açılması ve gerektiğinde veriler üzerinde değişiklik yapabilmesi durumlarında kullanılan bir yapıdır. Bu genelde SQLite veritabanı olmakta birlikte farklı veri saklama biçimleri de olabilir.
 
 Detaylı bilgi için [tıklayınız.](https://developer.android.com/guide/topics/providers/content-providers.html)
 
-#### Android'te veri saklamak için kaç yol vardır ? [:fire:](https://github.com/yusufcakmak/Android-Mulakat/issues/1)
+#### <a name="datastore"></a> Android'te veri saklamak için kaç yol vardır ? [:fire:](https://github.com/yusufcakmak/Android-Mulakat/issues/1)
 5 yol vardır. Shared preferences, Internal Storage, Local cache, External Storage, SQLite Database, Content Provider, Network Connection.
-#### Fragmentlarda empty constructora ihtiyaç var mıdır? Neden? :fire: :fire:
+
+#### <a name="fragmentempty"></a> Fragmentlarda empty constructora ihtiyaç var mıdır? Neden? :fire: :fire:
 Fragment oluştururken empty constructor'a ihtiyaç vardır. Bazı durumlarda (Screen rotation vs.) android frameworku fragmenti destroy edip tekrar yaratır. Bu durumda framework tarafında fragment'ın empty constructor'ı çağrılır. Eğer parametreli bir constructor eklemediysek empty constructor yaratmaya ihtiyaç yoktur çünkü bu durumda java compiler empty constructor'u kendi ekler. Fakat parametreli bir constructor tanımlarsak eğer bunun yanında empty constructor tanımlamak zorundayız. 
 
 Parametreli bir constructor tanımlayıp empty constructor tanımlamazsak uygulamamız çalışmaz mı? Çalışır. Fakat rotation change vs. gibi android frameworkünün fragmenti yok edip tekrar yarattığı durumda ```android.support.v4.app.Fragment$InstantiationException``` hatası fırlatılır.
-#### Fragment Transaction işleminde commit(), commitNow(), commitAllowingStateLoss(), commitNowAllowingStateLoss() farkı nedir? :fire: :fire: :fire:
 
-#### SharedPreferences'e data yazarken commit() ve apply() methodlarının farkı nedir? :fire: :fire:
+#### <a name="fragmentcommit"></a> Fragment Transaction işleminde commit(), commitNow(), commitAllowingStateLoss(), commitNowAllowingStateLoss() farkı nedir? :fire: :fire: :fire:
+
+#### <a name="sharedpref"></a> SharedPreferences'e data yazarken commit() ve apply() methodlarının farkı nedir? :fire: :fire:
 commit() syncronous gerçekleşirken apply() asyncronous gerçekleşir. Yani commit() çağrıldığında o işlemi hemen gerçekleştirir. apply()  methodu da arka planda gerçekleşir.
 
-#### Launch Mode çeşitleri nelerdir ? :fire: :fire:
+#### <a name="launchmode"></a> Launch Mode çeşitleri nelerdir ? :fire: :fire:
 Android uygulama geliştirirken bir Activity’ nin yeni bir tane olarak oluşturulup kullanılacağını veya zaten var olan bir instance ' nin tekrardan kullanılabileceğini tanımlayan kurallar dizidir.
 
 Bu kuralları kısa bir şekilde özetleyecek olursak, 
